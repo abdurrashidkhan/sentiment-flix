@@ -30,46 +30,48 @@ export default function MainBanner() {
   // console.log(bannerContent);
   return (
     <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-        }}
-        className="mySwiper"
-      >
-        {bannerContent.map((b, index) => (
-          <SwiperSlide key={index} className="">
-            <Image
-              style={{ objectFit: "fill" }}
-              src={b?.image}
-              alt="banner image load "
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="container mx-auto">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          }}
+          className="mySwiper"
+        >
+          {bannerContent.map((b, index) => (
+            <SwiperSlide key={index} className="">
+              <Image
+                style={{ objectFit: "fill" }}
+                src={b?.image}
+                alt="banner image load "
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 }
