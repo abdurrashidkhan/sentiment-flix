@@ -1,9 +1,11 @@
-.swiper {
+#main_banner .swiper {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
-
-.swiper-slide {
+#main_banner .mySwiper {
+  position: relative; /* Ensures Swiper container has relative positioning */
+}
+#main_banner .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -14,7 +16,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+#main_banner .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -23,7 +25,7 @@
 /* content center  */
 .banner_content_center {
   position: absolute;
-  bottom: -0%;
+  bottom: 0%;
   left: 50%;
   z-index: 1;
   width: 100%;
@@ -32,4 +34,12 @@
   -moz-transform: translate(-50%, -0%);
   -ms-transform: translate(-50%, -0%);
   -o-transform: translate(-50%, -0%);
+}
+#main_banner .swiper-button-next,
+#main_banner .swiper-button-prev {
+  color: #fff; /* Change color to ensure they are visible */
+  z-index: 10; /* Ensure they are on top */
+}
+#main_banner .swiper-pagination-bullet {
+  background-color: #fff;
 }

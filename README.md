@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+"use client";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
-## Getting Started
+// import required modules
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-First, run the development server:
+//
+import image1 from "../../images/1.jpeg";
+import image2 from "../../images/2.jpeg";
+import image3 from "../../images/3.jpeg";
+import image4 from "../../images/4.jpeg";
+import image5 from "../../images/5.webp";
+import image6 from "../../images/6.webp";
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+import Image from "next/image";
+import "./style.css";
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+// import required modules
+export default function MainBanner() {
+  const bannerContent = [
+    { image: image1 },
+    { image: image2 },
+    { image: image3 },
+    { image: image4 },
+    { image: image5 },
+    { image: image6 },
+  ];
+  // console.log(bannerContent);
+  return (
+    <>
+      <div className="container mx-auto ">
+        {/* sm devices */}
+        <div className="">
+          <Swiper
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            slidesPerView={1}
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+            }}
+            className="mySwiper relative"
+          >
+            {bannerContent.map((b, index) => (
+              <SwiperSlide key={index} className="">
+                <Image
+                  // style={{ objectFit: "fill" }}
+                  src={b?.image}
+                  alt="banner image load "
+                  className="w-full h-auto mx-auto"
+                />
+              </SwiperSlide>
+            ))}
+            <div className="">
+              <div className="banner_content_center text-center shadow-2xl">
+                <div className="bg-gradient-to-t from-[#000] to-transparent text-[#fff] py-28 sm:py-48">
+                  <div className="">
+                    <h1 className="text-[35px] sm:text-[42px]">
+                      The Home of Romance
+                    </h1>
+                    {/* <p className="text-[16px]">Enter your email to get started.</p> */}
+                  </div>
+                  <div className="py-5 flex items-center  justify-center">
+                    <input
+                      type="email"
+                      className="py-2 px-2  rounded-l focus:outline-none text-[#000] bg-[#eeeeee]"
+                      placeholder="Enter your Email"
+                    />
+                    <button className="bg-[#cf2626] hover:bg-[#af0101] py-2 px-4  rounded-r duration-500 ease-in-out">
+                      Get Started
+                    </button>
+                  </div>
+                  <div className="">
+                    <p>Watch on any device. Cancel at any time.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Swiper>
+        </div>
+        {/* large */}
+      </div>
+    </>
+  );
+}
