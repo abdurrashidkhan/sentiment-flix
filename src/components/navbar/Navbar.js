@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-[#2e2d26e1] shadow-2xl fixed z-[3] text-[#fff]">
+    <div className="navbar bg-[#2e2d26] shadow-2xl fixed z-[3] text-[#fff]">
       <div className="container mx-auto">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl text-[#fff]">Sentiment Flix</a>
