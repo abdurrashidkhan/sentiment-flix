@@ -30,7 +30,7 @@ export default function MainBanner() {
   // console.log(bannerContent);
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto relative">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -71,6 +71,29 @@ export default function MainBanner() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="banner_content_center text-center shadow-2xl">
+          <div className="bg-gradient-to-t from-[#000] to-transparent text-[#fff] py-28 sm:py-40">
+            <div className="">
+              <h1 className="text-[35px] sm:text-[42px]">
+                The Home of Romance
+              </h1>
+              {/* <p className="text-[16px]">Enter your email to get started.</p> */}
+            </div>
+            <div className="py-5 flex items-center  justify-center">
+              <input
+                type="email"
+                className="py-2 px-2  rounded-l focus:outline-none text-[#000] bg-[#eeeeee]"
+                placeholder="Enter your Email"
+              />
+              <button className="bg-[#cf2626] hover:bg-[#af0101] py-2 px-4  rounded-r duration-500 ease-in-out">
+                Get Started
+              </button>
+            </div>
+            <div className="">
+              <p>Watch on any device. Cancel at any time.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

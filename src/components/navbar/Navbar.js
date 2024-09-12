@@ -1,9 +1,9 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-[#fff] shadow-2xl fixed z-[3]">
+    <div className="navbar bg-[#2e2d26e1] shadow-2xl fixed z-[3] text-[#fff]">
       <div className="container mx-auto">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl">Sentiment Flix</a>
+          <a className="btn btn-ghost text-xl text-[#fff]">Sentiment Flix</a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -32,7 +32,7 @@ export default function Navbar() {
             </div>
             <div
               tabIndex={0}
-              className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+              className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow rounded bg-[#2e2d26e1]"
             >
               <div className="card-body">
                 <span className="text-lg font-bold">8 Items</span>
@@ -60,7 +60,7 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded z-[1] mt-3 w-52 p-2 shadow bg-[#2e2d26e1]"
             >
               <li>
                 <a className="justify-between">
