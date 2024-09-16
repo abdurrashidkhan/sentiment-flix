@@ -1,3 +1,4 @@
+import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -14,6 +15,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com",
       },
+      {
+        protocol: "https",
+        hostname: "cruip-tutorials.vercel.app",
+      },
     ],
   },
   // webpack: (config, { isServer }) => {
@@ -22,4 +27,4 @@ const nextConfig = {
   // },
 };
 
-export default nextConfig;
+export default withNextVideo(nextConfig);
