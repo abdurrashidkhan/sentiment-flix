@@ -32,7 +32,7 @@ export default function Books() {
     <main className="">
       <div className="container mx-auto py-10 sm:py-20 px-2" id="books">
         <div className="text-center ">
-          <h1 className="text-4xl pb-10 font-medium">What We've Made.</h1>
+          <h1 className="text-4xl pb-10 font-medium">What We&apos;ve Made.</h1>
         </div>
         <div className="">
           <Swiper

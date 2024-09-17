@@ -34,7 +34,7 @@ export default function PopularBooks() {
       <div className="container mx-auto py-10 sm:py-20 px-2" id="PopularBook">
         <div className="text-center pb-10">
           <h1 className="text-3xl sm:text-4xl font-medium">
-            What We're Making.
+            What We&apos;re Making.
           </h1>
           <p className="text-lg pt-2 sm:pt-1">
             {" "}
