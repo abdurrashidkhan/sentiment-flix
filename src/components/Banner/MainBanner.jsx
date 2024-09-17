@@ -74,7 +74,7 @@ export default function App() {
             ))}
             <div className="">
               <div className="banner_content_center text-center shadow-2xl">
-                <div className="bg-gradient-to-t from-[#000] to-transparent text-[#fff] py-28 sm:py-48">
+                <div className="bg-gradient-to-t from-[#000] to-transparent text-[#fff] py-32 sm:py-52">
                   <div className="">
                     <h1 className="text-[35px] sm:text-[42px]">
                       The Home of Romance
