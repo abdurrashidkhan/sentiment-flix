@@ -8,7 +8,7 @@ export default function NovelsToMoviesAndSeries() {
   return (
     <section className="">
       <div className="container mx-auto px-2 py-28" id="streaming">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center justify-items-start">
           {/* Section header */}
           <div className="">
             <h1 className="text-lg font-medium text-[#661113]">

@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import NovelsToMoviesAndSeries from "@/components/NovelsToMoviesAndSeries/NovelsToMoviesAndSeries";
 import PopularBooks from "@/components/PopularBook/PopularBook";
 import Streaming from "@/components/Streaming/Streaming";
+import WatchEverywhere from "@/components/WatchEverywhere/WatchEverywhere";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Books />
       <PopularBooks />
       <Streaming />
+      <WatchEverywhere />
     </>
   );
 }
