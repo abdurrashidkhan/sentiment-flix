@@ -8,7 +8,7 @@ export default function NovelsToMoviesAndSeries() {
   return (
     <section className="">
       <div
-        className="container mx-auto px-2 py-20"
+        className="container mx-auto px-2 py-28"
         id="novelsToMoviesAndSeries"
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center justify-items-center">
