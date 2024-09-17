@@ -1,0 +1,11 @@
+#streaming {
+  background-image: linear-gradient(to top, #ffffff, #f7f7f780),
+    url("../../images/section_bg/3.jpg");
+
+  background-color: #ccccccdc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
