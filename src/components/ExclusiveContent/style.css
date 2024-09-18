@@ -1,0 +1,11 @@
+#exclusiveContent {
+  background-image: linear-gradient(to right, #ffffffe0, #f7f7f700),
+    url("../../images/section_bg/PassionFlix_WaitWithMe_EC.jpg");
+
+  background-color: #ccccccdc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  width: 100%;
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

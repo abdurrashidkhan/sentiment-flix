@@ -17,7 +17,7 @@ export default function NovelsToMoviesAndSeries() {
             <h1 className="text-lg font-semibold text-[#661113]">
               Novels To Movies And Series.
             </h1>
-            <h2 className="text-4xl pt-5 pb-3 font-semibold capitalize">
+            <h2 className="text-3xl sm:text-4xl  pt-5 pb-3 font-medium  capitalize text-slate-800 tracking-[.5px]">
               Turning your favorite romance novels into movies and series.
             </h2>
             <p className="text-base font-semibold">

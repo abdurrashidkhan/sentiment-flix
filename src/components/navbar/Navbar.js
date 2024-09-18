@@ -32,7 +32,7 @@ export default function Navbar() {
             </div>
             <div
               tabIndex={0}
-              className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow rounded bg-[#2e2d26e1]"
+              className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow rounded bg-[#2e2d26e1] text-slate-800"
             >
               <div className="card-body">
                 <span className="text-lg font-bold">8 Items</span>
@@ -60,7 +60,7 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded z-[1] mt-3 w-52 p-2 shadow bg-[#2e2d26e1]"
+              className="menu menu-sm dropdown-content bg-base-100 rounded z-[1] mt-3 w-52 p-2 shadow bg-[#2e2d26e1] text-slate-800"
             >
               <li>
                 <a className="justify-between">

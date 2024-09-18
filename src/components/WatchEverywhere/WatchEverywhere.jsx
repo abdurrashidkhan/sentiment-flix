@@ -4,11 +4,13 @@ export default function WatchEverywhere() {
   return (
     <section>
       <div className="">
-        <div className="container mx-auto px-2 py-10">
+        <div className="container mx-auto px-2 py-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center justify-items-center gap-5">
             {/* fast  */}
             <div className="">
-              <h1 className="text-4xl font-medium ">Watch Everywhere.</h1>
+              <h1 className="text-3xl sm:text-4xl font-medium ">
+                Watch Everywhere.
+              </h1>
               <p className="pt-6">
                 Enjoy PASSIONFLIX on your Smart TV, smartphone, tablet, or
                 laptop. Plans start at $5.99 a month. Cancel anytime.
