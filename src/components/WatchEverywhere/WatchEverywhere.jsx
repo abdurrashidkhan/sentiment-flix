@@ -4,7 +4,7 @@ export default function WatchEverywhere() {
   return (
     <section>
       <div className="">
-        <div className="container mx-auto px-2 py-10">
+        <div className="container mx-auto px-2 py-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center justify-items-center gap-5">
             {/* fast  */}
             <div className="">

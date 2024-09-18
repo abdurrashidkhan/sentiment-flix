@@ -1,5 +1,7 @@
 import MainBanner from "@/components/Banner/MainBanner";
 import Books from "@/components/Books/Books";
+import ClientReview from "@/components/ClientReview/ClientReview";
+import ExclusiveContent from "@/components/ExclusiveContent/ExclusiveContent";
 import Navbar from "@/components/navbar/Navbar";
 import NovelsToMoviesAndSeries from "@/components/NovelsToMoviesAndSeries/NovelsToMoviesAndSeries";
 import PopularBooks from "@/components/PopularBook/PopularBook";
@@ -16,6 +18,8 @@ export default function Home() {
       <PopularBooks />
       <Streaming />
       <WatchEverywhere />
+      <ExclusiveContent />
+      <ClientReview />
     </>
   );
 }
