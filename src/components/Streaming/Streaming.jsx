@@ -14,7 +14,7 @@ export default function NovelsToMoviesAndSeries() {
             <h1 className="text-lg font-medium text-[#661113]">
               Now Streaming.
             </h1>
-            <h2 className="text-4xl pt-5 pb-3 font-semibold capitalize">
+            <h2 className="text-3xl sm:text-4xl font-medium  pt-5 pb-3 capitalize">
               Wallbanger.
             </h2>
             <p className="text-base font-medium">

@@ -41,10 +41,10 @@ export default function ClientReview() {
     },
   ];
   return (
-    <main className="">
-      <div className="container mx-auto py-10 sm:py-20 px-2" id="ClientReview">
+    <section className="" id="ClientReview">
+      <div className="container mx-auto py-10 sm:py-20 px-2">
         <div className="text-center pb-10">
-          <h1 className="text-3xl sm:text-4xl font-medium">Testimonials</h1>
+          <h1 className="text-3xl sm:text-4xl font-medium ">Testimonials</h1>
           <p className="text-lg pt-2 sm:pt-1">
             Want to visit us on set? Become a Signature Member.
           </p>
@@ -107,6 +107,6 @@ export default function ClientReview() {
           </Swiper>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
