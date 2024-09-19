@@ -6,7 +6,7 @@ export default function Navbar() {
           <a className="btn btn-ghost text-xl text-[#fff]">Sentiment Flix</a>
         </div>
         <div className="flex-none">
-          <div className="dropdown dropdown-end">
+          {/* <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -44,7 +44,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
