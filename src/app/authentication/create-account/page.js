@@ -2,7 +2,7 @@
 import Error from "@/app/error";
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
-import LoginWithAll from "@/Components/authentication/LoginWithAll/LoginWithAll";
+import LoginWithAll from "@/components/authentication/LoginWithAll/LoginWithAll";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -33,7 +33,7 @@ export default function SinUp() {
     await updateProfile({ displayName: e.userName });
     const userInfo = {
       displayName: e?.userName,
-      userNumber:e?.userNumber,
+      userNumber: e?.userNumber,
       email: e?.userEmail,
       password: e?.password,
       emailVerified: user?.emailVerified || false,
@@ -115,7 +115,7 @@ export default function SinUp() {
             </div>
             <div className="my-2">
               <label htmlFor="userEmail" className="block">
-                Enter Your Email 
+                Enter Your Email
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
                 <input

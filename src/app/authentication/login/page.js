@@ -1,7 +1,7 @@
 "use client";
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
-import LoginWithAll from "@/Components/authentication/LoginWithAll/LoginWithAll";
+import LoginWithAll from "@/components/authentication/LoginWithAll/LoginWithAll";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
