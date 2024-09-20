@@ -79,9 +79,9 @@ export default function SinUp() {
     return console.log(error.message);
   }
   return (
-    <section className="text-[#fff]">
+    <section className="text-[#000]">
       <div className="container mx-auto px-2 relative h-[100vh]">
-        <div className="login_content_center w-[350px]  h-auto bg-[#181818]  p-3 rounded shadow-2xl">
+        <div className="login_content_center w-[400px]  h-auto bg-[#fff]  p-3 rounded shadow-2xl">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="my-2">
               <label htmlFor="userName" className="block">

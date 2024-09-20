@@ -3,7 +3,6 @@
 import { auth } from "@/app/firebase.init";
 import Loading from "@/app/loading";
 import CheckingUser from "@/components/Admin/checkingUser";
-import Ads from "@/components/ads/Ads";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 
 export default function Dashboard() {
@@ -22,11 +21,6 @@ export default function Dashboard() {
   return (
     <div className="">
       <h1>Hello Dashboard</h1>
-      <Ads />
-      <Ads />
-      <Ads />
-      <Ads />
-      <Ads />
     </div>
   );
 }

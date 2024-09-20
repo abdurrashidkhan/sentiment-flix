@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    /* From Uiverse.io by satyamchaudharydev */
-
-    <div className="loader"></div>
+    <section id="loader">
+      <div class="spinner"></div>
+    </section>
   );
 }
