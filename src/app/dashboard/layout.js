@@ -45,22 +45,24 @@ const Layout = ({ children }) => {
   if (error || OutError) {
     console.log(error?.message);
   }
+  console.log(open);
   return (
     <>
       {/* <Navbar /> */}
       <div className="container mx-auto px-2  pt-[95px] sm:pt-[50px] ">
         {/* this content just small dives  */}
         {!open && (
-          <div
-            className="fixed text-5xl ease-in-out duration- z-[99] text-[#fff] hover:tooltip tooltip-open tooltip-right sm:hidden"
+          <button
+            className=" text-5xl ease-in-out duration- z-[99] text-[#fff] hover:tooltip tooltip-open tooltip-right sm:hidden fixed"
             id="dashboard_menu_icon"
+            onClick={() => setOpen(true)}
           >
             <HiMiniArrowRightOnRectangle
               className="sm:hidden w-full h-[60px] py-5 p-2  rounded-r shadow-2xl drop-shadow-2xl bg-[#ccc9c9] dark:bg-[#122033] dark:text-[#fff] text-[#000]"
-              onClick={() => setOpen(true)}
+
               // id="dashboard_menu_open_icon"
             />
-          </div>
+          </button>
         )}
         {/* end  */}
         <div className="flex gap-0 relative">

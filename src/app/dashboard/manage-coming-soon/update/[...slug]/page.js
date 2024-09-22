@@ -227,7 +227,7 @@ export default function UpdateSeriesSubtitles() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
                 {/* Title */}
                 <div className="w-full">
-                  <label htmlFor="title">Title</label>
+                  <label htmlhtmlFor="title">Title</label>
                   <input
                     id="title"
                     name="title"
@@ -252,7 +252,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
                 {/* Free or Paid */}
                 <div className="w-full">
-                  <label htmlFor="seriesName">Series Name</label>
+                  <label htmlhtmlFor="seriesName">Series Name</label>
                   <input
                     id="seriesName"
                     name="seriesName"
@@ -278,7 +278,7 @@ export default function UpdateSeriesSubtitles() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 pt-3">
                 {/* Season */}
                 <div className="w-full">
-                  <label htmlFor="season">Content Season</label>
+                  <label htmlhtmlFor="season">Content Season</label>
                   <input
                     id="season"
                     name="season"
@@ -301,7 +301,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
                 {/* Episode */}
                 <div className="w-full">
-                  <label htmlFor="episode">Content Episode</label>
+                  <label htmlhtmlFor="episode">Content Episode</label>
                   <input
                     id="episode"
                     defaultValue={allContent?.episode}
@@ -325,7 +325,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
                 <div className="w-full pt-4">
-                  <label htmlFor="catagories" className=" ">
+                  <label htmlhtmlFor="catagories" className=" ">
                     Catagories
                   </label>
                   <select
@@ -364,7 +364,7 @@ export default function UpdateSeriesSubtitles() {
                   </label>
                 </div>
                 <div className="w-full pt-4">
-                  <label htmlFor="displaySection" className=" ">
+                  <label htmlhtmlFor="displaySection" className=" ">
                     Where display ?
                   </label>
                   <select
@@ -408,7 +408,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
               </div>
               <div className="w-full pt-3">
-                <label htmlFor="freeOrPaid">Free or Paid</label>
+                <label htmlhtmlFor="freeOrPaid">Free or Paid</label>
                 <select
                   id="freeOrPaid"
                   className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700  text-slate-400  rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm bg-[#1f296117]   mt-2"
@@ -441,7 +441,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Content Summary */}
               <div className="pt-3">
-                <label htmlFor="contentSummary">Content Summary</label>
+                <label htmlhtmlFor="contentSummary">Content Summary</label>
                 <textarea
                   cols="10"
                   rows="5"
@@ -465,7 +465,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Description */}
               <div className="pt-3">
-                <label htmlFor="description">Description</label>
+                <label htmlhtmlFor="description">Description</label>
                 <textarea
                   cols="10"
                   defaultValue={allContent?.description}
@@ -489,7 +489,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* download url */}
               <div className="pt-3">
-                <label htmlFor="downloadUrl"> Video download URL</label>
+                <label htmlhtmlFor="downloadUrl"> Video download URL</label>
                 <input
                   id="downloadUrl"
                   name="downloadUrl"
@@ -512,7 +512,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Video */}
               <div className="pt-3">
-                <label htmlFor="video"> Video Preview URL</label>
+                <label htmlhtmlFor="video"> Video Preview URL</label>
                 <input
                   id="video"
                   name="video"
@@ -534,7 +534,7 @@ export default function UpdateSeriesSubtitles() {
                 )}
               </div>
               {/* <div className="pt-3">
-              <label htmlFor="videoDownloadUrl"> Video Download URL</label>
+              <label htmlhtmlFor="videoDownloadUrl"> Video Download URL</label>
               <input
                 id="videoDownloadUrl"
                 name="videoDownloadUrl"
@@ -558,7 +558,9 @@ export default function UpdateSeriesSubtitles() {
               {/* Image */}
               {/* Image */}
               <div className="pt-3">
-                <label htmlFor="lgImage">Thumbnail Image (1280 * 720)</label>
+                <label htmlhtmlFor="lgImage">
+                  Thumbnail Image (1280 * 720)
+                </label>
                 <input
                   id="lgImage"
                   name="lgImage"
@@ -580,7 +582,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Image */}
               <div className="pt-3">
-                <label htmlFor="smImage">Thumbnail Image (433 * 640)</label>
+                <label htmlhtmlFor="smImage">Thumbnail Image (433 * 640)</label>
                 <input
                   id="smImage"
                   name="smImage"
@@ -629,7 +631,7 @@ export default function UpdateSeriesSubtitles() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
                 {/* Title */}
                 <div className="w-full">
-                  <label htmlFor="title">Title</label>
+                  <label htmlhtmlFor="title">Title</label>
                   <input
                     id="title"
                     name="title"
@@ -654,7 +656,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
                 {/* Free or Paid */}
                 <div className="w-full">
-                  <label htmlFor="seriesName">Series Name</label>
+                  <label htmlhtmlFor="seriesName">Series Name</label>
                   <input
                     id="seriesName"
                     name="seriesName"
@@ -680,7 +682,7 @@ export default function UpdateSeriesSubtitles() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 pt-3">
                 {/* Season */}
                 <div className="w-full">
-                  <label htmlFor="season">Content Season</label>
+                  <label htmlhtmlFor="season">Content Season</label>
                   <input
                     id="season"
                     name="season"
@@ -703,7 +705,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
                 {/* Episode */}
                 <div className="w-full">
-                  <label htmlFor="episode">Content Episode</label>
+                  <label htmlhtmlFor="episode">Content Episode</label>
                   <input
                     id="episode"
                     defaultValue={allContent?.episode}
@@ -727,7 +729,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5">
                 <div className="w-full pt-4">
-                  <label htmlFor="catagories" className=" ">
+                  <label htmlhtmlFor="catagories" className=" ">
                     Catagories
                   </label>
                   <select
@@ -763,7 +765,7 @@ export default function UpdateSeriesSubtitles() {
                   </label>
                 </div>
                 <div className="w-full pt-4">
-                  <label htmlFor="displaySection" className=" ">
+                  <label htmlhtmlFor="displaySection" className=" ">
                     Where display ?
                   </label>
                   <select
@@ -809,7 +811,7 @@ export default function UpdateSeriesSubtitles() {
                 </div>
               </div>
               <div className="w-full pt-3">
-                <label htmlFor="freeOrPaid">Free or Paid</label>
+                <label htmlhtmlFor="freeOrPaid">Free or Paid</label>
                 <select
                   id="freeOrPaid"
                   className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700  text-slate-400  rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm bg-[#1f296117]   mt-2"
@@ -842,7 +844,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Content Summary */}
               <div className="pt-3">
-                <label htmlFor="contentSummary">Content Summary</label>
+                <label htmlhtmlFor="contentSummary">Content Summary</label>
                 <textarea
                   cols="10"
                   rows="5"
@@ -866,7 +868,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Description */}
               <div className="pt-3">
-                <label htmlFor="description">Description</label>
+                <label htmlhtmlFor="description">Description</label>
                 <textarea
                   cols="10"
                   defaultValue={allContent?.description}
@@ -890,7 +892,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* download url */}
               <div className="pt-3">
-                <label htmlFor="downloadUrl"> Video download URL</label>
+                <label htmlhtmlFor="downloadUrl"> Video download URL</label>
                 <input
                   id="downloadUrl"
                   name="downloadUrl"
@@ -913,7 +915,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Video */}
               <div className="pt-3">
-                <label htmlFor="video"> Video Preview URL </label>
+                <label htmlhtmlFor="video"> Video Preview URL </label>
                 <input
                   id="video"
                   name="video"
@@ -937,7 +939,9 @@ export default function UpdateSeriesSubtitles() {
 
               {/* Image */}
               <div className="pt-3">
-                <label htmlFor="lgImage">Thumbnail Image (1280 * 720)</label>
+                <label htmlhtmlFor="lgImage">
+                  Thumbnail Image (1280 * 720)
+                </label>
                 <input
                   id="lgImage"
                   name="lgImage"
@@ -959,7 +963,7 @@ export default function UpdateSeriesSubtitles() {
               </div>
               {/* Image */}
               <div className="pt-3">
-                <label htmlFor="smImage">Thumbnail Image (433 * 640)</label>
+                <label htmlhtmlFor="smImage">Thumbnail Image (433 * 640)</label>
                 <input
                   id="smImage"
                   name="smImage"

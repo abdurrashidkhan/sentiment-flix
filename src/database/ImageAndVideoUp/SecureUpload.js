@@ -91,7 +91,7 @@ const SecureUpload = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="video">Video:</label>
+          <label htmlhtmlFor="video">Video:</label>
           <br />
           <input
             type="file"
@@ -102,7 +102,7 @@ const SecureUpload = () => {
         </div>
         <br />
         <div>
-          <label htmlFor="img">Image:</label>
+          <label htmlhtmlFor="img">Image:</label>
           <br />
           <input
             type="file"

@@ -1,3 +1,6 @@
+[x-cloak] {
+  display: none;
+}
 #dashboard_menu_open_icon {
   width: 100%;
   height: 60px;

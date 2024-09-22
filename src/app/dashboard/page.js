@@ -1,9 +1,10 @@
 // welcome to dashboard
 "use client";
-import { auth } from "@/app/firebase.init";
-import Loading from "@/app/loading";
+
 import CheckingUser from "@/components/Admin/checkingUser";
 import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
+import { auth } from "../firebase.init";
+import Loading from "../loading";
 
 export default function Dashboard() {
   const [user, loading, error] = useAuthState(auth);
