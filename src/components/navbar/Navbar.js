@@ -1,12 +1,35 @@
+"use client";
+import { auth } from "@/app/firebase.init";
+import { usePathname } from "next/navigation";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
+import Swal from "sweetalert2";
+
+// import logo
+
+import { useState } from "react";
 export default function Navbar() {
+  const pathname = usePathname();
+  const [user, loading, error] = useAuthState(auth);
+  // console.log(user);
+  const [signOut, outLoading, OutError] = useSignOut(auth);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openProfile, setOpenProfile] = useState(false);
+
+  const userLogOut = async () => {
+    await signOut();
+    Swal.fire({
+      title: "Logout success",
+      icon: "success",
+    });
+  };
   return (
-    <div className="navbar bg-[#2e2d26] shadow-2xl fixed z-[3] text-[#fff]">
+    <div className="navbar bg-[#ffffffea]  fixed z-[3] text-[#000] drop-shadow-2xl">
       <div className="container mx-auto">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl text-[#fff]">Sentiment Flix</a>
+          <a className="btn btn-ghost text-xl ">Booklistenin</a>
         </div>
         <div className="flex-none">
-          <div className="dropdown dropdown-end">
+          {/* <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
@@ -44,7 +67,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -72,7 +95,7 @@ export default function Navbar() {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <button onClick={() => userLogOut()}>Logout</button>
               </li>
             </ul>
           </div>

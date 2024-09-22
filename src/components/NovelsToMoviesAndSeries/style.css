@@ -7,5 +7,5 @@
   width: 100%;
   background-position: left; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
