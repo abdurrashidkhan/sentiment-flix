@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
         <div className="flex gap-0 relative">
           {open && (
             <div className="">
-              <aside className="absolute sm:hidden w-[70%] bg-[#1b1b1b] h-[100vh]  py-5 ease-in-out duration-700 top-[-2%] left-[0%] z-[999]">
+              <aside className="absolute sm:hidden w-[70%] bg-[#fff] h-[100vh]  py-5 ease-in-out duration-700 top-[-2%] left-[0%] z-[999]">
                 <div
                   className="absolute  text-red-700"
                   id="dashboard_close_icon"
@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
                   {dashboardRouting.map(({ path, name }) => (
                     <li
                       key={path}
-                      className="px-3 py-1  hover:bg-[#3333332f] mx-1 rounded"
+                      className="px-3 py-1  hover:bg-[#fff] mx-1 rounded"
                     >
                       <Link
                         exact={path === "/dashboard"}
@@ -100,7 +100,7 @@ const Layout = ({ children }) => {
             </div>
           )}
           {/* this menu list for large dives */}
-          <aside className="hidden sm:block sm:w-[30%] bg-[#1b1b1b] h-[100vh]  py-5 ease-in-out duration-700 rounded shadow-2xl drop-shadow-2xl pt-[5%]">
+          <aside className="hidden sm:block sm:w-[30%] bg-[#fff] h-[100vh]  py-5 ease-in-out duration-700 rounded shadow-2xl drop-shadow-2xl pt-[5%]">
             <ul className="mt-5">
               {dashboardRouting.map(({ path, name }) => (
                 <li
@@ -122,7 +122,7 @@ const Layout = ({ children }) => {
           </aside>
           {/* main content show */}
           <div
-            className="w-[100%] bg-[#05080e] text-[#fff] p-5 h-[100vh] mt-[2%] sm:mt-[2%] rounded shadow-2xl  text-center sm:text-start pt-10 mb-5 overflow-auto md:relative"
+            className="w-[100%] bg-[#ffff] text-[#000] p-5 h-[100vh] mt-[2%] sm:mt-[0%] rounded shadow-2xl  text-center sm:text-start pt-10 mb-5 overflow-auto md:relative"
             id="dashboard_content"
           >
             {children}
