@@ -84,7 +84,7 @@ export default function SinUp() {
         <div className="login_content_center w-[400px]  h-auto bg-[#fff]  p-3 rounded shadow-2xl">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="my-2">
-              <label htmlhtmlFor="userName" className="block">
+              <label htmlFor="userName" className="block">
                 Enter Your Name
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
@@ -99,7 +99,7 @@ export default function SinUp() {
               </div>
             </div>
             <div className="my-2">
-              <label htmlhtmlFor="userNumber" className="block">
+              <label htmlFor="userNumber" className="block">
                 Enter Mobile Number
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
@@ -114,7 +114,7 @@ export default function SinUp() {
               </div>
             </div>
             <div className="my-2">
-              <label htmlhtmlFor="userEmail" className="block">
+              <label htmlFor="userEmail" className="block">
                 Enter Your Email
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
@@ -129,7 +129,7 @@ export default function SinUp() {
               </div>
             </div>
             <div className="my-2">
-              <label htmlhtmlFor="password" className="block">
+              <label htmlFor="password" className="block">
                 Password
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">

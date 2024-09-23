@@ -1,9 +1,8 @@
 import Swal from "sweetalert2";
-export default async function insertBanner(insertData,seIsLoading,reset) {
-
+export default async function insertBooks(insertData, seIsLoading, reset) {
   try {
     // C:\projects\digital-marketing-agency\src\app\api\merge-marketing\v1\users\insert-user\[email].js
-    const res = await fetch(`/api/add-banner/`, {
+    const res = await fetch(`/api/add-book/`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(insertData),
@@ -13,8 +12,8 @@ export default async function insertBanner(insertData,seIsLoading,reset) {
       throw new Error("Failed to insert Data");
     }
     if (res.ok) {
-      seIsLoading(false)
-      reset()
+      seIsLoading(false);
+      reset();
       Swal.fire("insert data success", "", "success");
     }
     return res.json();

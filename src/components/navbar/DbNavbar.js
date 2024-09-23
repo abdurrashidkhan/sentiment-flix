@@ -19,20 +19,7 @@ export default function DbNavbar() {
   // routing
   const dashboardRouting = [
     { path: "/dashboard", name: "Overview" },
-    { path: "/dashboard/add-banner", name: "Add Banner" },
-    // { path: "/dashboard/add-series", name: "Add Series" },
-    { path: "/dashboard/add-movies", name: "Add Movies" },
-    { path: "/dashboard/add-coming-soon", name: "Add Coming Soon" },
-    { path: "/dashboard/series-subtitles", name: "Add Series Subtitles" },
-    // { path: "/dashboard/teammate", name: "Teammate " },
-    {
-      path: "/dashboard/manage-series-subtitles",
-      name: "Manage Series & Subtitles",
-    },
-    { path: "/dashboard/manage-coming-soon", name: "Manage Coming Soon" },
-    { path: "/dashboard/manage-banner", name: "Manage Banner" },
-    { path: "/dashboard/manage-movies", name: "Manage Movies" },
-    { path: "/dashboard/manage-users", name: "Manage Users" },
+    { path: "/dashboard/add-book", name: "Add Book" },
   ];
 
   const userLogOut = async () => {
@@ -42,7 +29,7 @@ export default function DbNavbar() {
       icon: "success",
     });
   };
-  console.log(openMenu);
+
   return (
     <div className="">
       {openMenu && (
@@ -105,7 +92,7 @@ export default function DbNavbar() {
             </div>
           </div>
           <div className="navbar-center">
-            <a className="btn btn-ghost text-xl">Booklistenin</a>
+            <a className="btn btn-ghost text-xl">Bookliste</a>
           </div>
           <div className="navbar-end">
             {/* <button className="btn btn-ghost btn-circle">

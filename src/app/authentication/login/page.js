@@ -54,7 +54,7 @@ export default function Login() {
           </div>
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="my-2">
-              <label htmlhtmlFor="userEmail" className="block">
+              <label htmlFor="userEmail" className="block">
                 Email address
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">
@@ -69,7 +69,7 @@ export default function Login() {
               </div>
             </div>
             <div className="my-4">
-              <label htmlhtmlFor="password" className="block">
+              <label htmlFor="password" className="block">
                 Password
               </label>
               <div className="relative mt-2 rounded-md shadow-sm">

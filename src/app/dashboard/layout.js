@@ -17,20 +17,7 @@ const Layout = ({ children }) => {
   const [signOut, outLoading, OutError] = useSignOut(auth);
   const dashboardRouting = [
     { path: "/dashboard", name: "Overview" },
-    { path: "/dashboard/add-banner", name: "Add Banner" },
-    // { path: "/dashboard/add-series", name: "Add Series" },
-    { path: "/dashboard/add-movies", name: "Add Movies" },
-    { path: "/dashboard/add-coming-soon", name: "Add Coming Soon" },
-    { path: "/dashboard/series-subtitles", name: "Add Series Subtitles" },
-    // { path: "/dashboard/teammate", name: "Teammate " },
-    {
-      path: "/dashboard/manage-series-subtitles",
-      name: "Manage Series & Subtitles",
-    },
-    { path: "/dashboard/manage-coming-soon", name: "Manage Coming Soon" },
-    { path: "/dashboard/manage-banner", name: "Manage Banner" },
-    { path: "/dashboard/manage-movies", name: "Manage Movies" },
-    { path: "/dashboard/manage-users", name: "Manage Users" },
+    { path: "/dashboard/add-book", name: "Add Book" },
   ];
 
   useEffect(() => {

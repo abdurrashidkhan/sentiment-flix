@@ -14,12 +14,13 @@ const poppins = Poppins({
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
+  const dbPath = pathname?.slice(0, 10);
   return (
     <html lang="en">
       <body
         className={`${poppins.className} text-slate-800 bg-[#f0eded] antialiased`}
       >
-        {pathname === "/dashboard" ? <DbNavbar /> : <Navbar />}
+        {dbPath === "/dashboard" ? <DbNavbar /> : <Navbar />}
         {children}
         <Footer />
       </body>

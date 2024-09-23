@@ -1,42 +1,40 @@
 import connectMongodb from "@/lib/mongodb";
-import banner from "@/models/bannerSchema";
+import books from "@/models/booksSchema";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
   const {
+    bookName,
     title,
-    seriesName,
-    freeOrPaid,
-    season,
+    contentDurations,
+    contentType,
     catagories,
     displaySection,
-    episode,
-    date,
-    smImage,
-    lgImage,
-    downloadUrl,
-    video,
-    contentSummary,
+    contentSubtitles,
+    director,
+    cast,
+    freeOrPaid,
     description,
+    video,
+    smImage,
   } = await request.json();
   const data = {
+    bookName,
     title,
-    seriesName,
-    freeOrPaid,
+    contentDurations,
+    contentType,
     catagories,
     displaySection,
-    season,
-    episode,
-    date,
-    smImage,
-    lgImage,
-    downloadUrl,
-    video,
-    contentSummary,
+    contentSubtitles,
+    director,
+    cast,
+    freeOrPaid,
     description,
+    video,
+    smImage,
   };
   await connectMongodb();
-  await banner.create(data);
+  await books.create(data);
   return NextResponse.json({
     message: "data upload success",
     status: true,
@@ -45,7 +43,7 @@ export async function POST(request) {
 }
 export async function GET(request) {
   await connectMongodb();
-  const allBanner = await banner.find({}).catch();
+  const allContent = await books.find({}).catch();
   // console.log(allUser)
-  return NextResponse.json({ allBanner });
+  return NextResponse.json({ allContent });
 }
